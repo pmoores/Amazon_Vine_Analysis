@@ -1,17 +1,31 @@
 # Analysis of Amazon Vine Reviews - Module 16 Challenge
 
+
 ## Project Purpose
-Use the Amazon Toy Reviews dataset to perform the ETL process with PySpark to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, you’ll use PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in your dataset.
+To use the Amazon Toy Reviews dataset to perform the ETL process with PySpark to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, use Pandas to determine if there is any bias toward favourable reviews from Vine members in your dataset.
+
 
 ## Results
-Using bulleted lists and images of DataFrames as support, address the following questions:
+**FIGURE 1: Results - Vine Toy Reviews**\
+![Summary - Vine Toy Reviews](https://github.com/pmoores/Amazon_Vine_Analysis/blob/main/Resources/Analysis_Summary_Vine_Reviews.png)
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+- There are 1266 Vine reviews and 62028 non-Vine reviews
+
+- There are 432 5-star Vine reviews and 29982 5-star non-Vine reviews
+
+- 34% of all Vine reviews are 5-star and 48% of all non-Vine reviews are 5-star
 
 
 ## Summary
-In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+The results of this analysis demonstrate that there is no positivity bias in the Vine toy reviews program. In fact, the Vine toy reviews have a slight negativity bias in terms of 5-star scores. 34% of all Vine reviews are 5-star while 48% of all non-Vine reviews are 5-star, a 14% difference towards lower review scores in Vine toy reviews.
+
+An additional analysis to perform on the dataset would be to compare the average star ratings of Vine versus non-Vine toy reviews to investigate if the same negativity bias exists across all star ratings.
+
 
 ## Attachments
+[Amazon_Reviews_ETL](https://github.com/pmoores/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb)
+
+
+[Vine_Review_Analysis](https://github.com/pmoores/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb)
+
+
